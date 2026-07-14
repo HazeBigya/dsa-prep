@@ -29,8 +29,8 @@ Foundation patterns. These show up constantly and build momentum.
 
 - [x] Two Sum
 - [x] Contains Duplicate
-- [ ] Valid Anagram
-- [ ] Group Anagrams
+- [x] Valid Anagram
+- [x] Group Anagrams
 - [ ] Top K Frequent Elements
 - [ ] Product of Array Except Self
 - [ ] Valid Palindrome
