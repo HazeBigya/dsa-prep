@@ -32,7 +32,7 @@ Foundation patterns. These show up constantly and build momentum.
 - [x] Valid Anagram
 - [x] Group Anagrams
 - [x] Top K Frequent Elements
-- [ ] Product of Array Except Self
+- [x] Product of Array Except Self
 - [ ] Valid Palindrome
 - [ ] Two Sum II (sorted)
 - [ ] 3Sum

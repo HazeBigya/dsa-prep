@@ -25,6 +25,7 @@ Each problem is worked the way an interview tests it:
 | [Valid Anagram](./valid_anagram) | ✅ | ✅ | Char-count map | O(n) | O(1) |
 | [Group Anagrams](./group_anagrams) | ✅ | ✅ | Canonical-key bucketing (sorted / count) | O(n·k) | O(n·k) |
 | [Top K Frequent](./top_k_frequent) | ✅ | ✅ | Count map + sort by frequency | O(n log n) | O(n) |
+| [Product of Array Except Self](./product_of_array) | ✅ | ✅ | Prefix × suffix products (no division) | O(n) | O(1) extra |
 
 ## Structure
 
