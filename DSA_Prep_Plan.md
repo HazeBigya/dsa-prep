@@ -30,8 +30,8 @@ Not NeetCode 150, but frequent phone-screen / warmup questions. Build syntax flu
 - [x] Fibonacci (iterative — series + nth value)
 - [x] Prime number check (√n bound)
 - [x] Factorial (iterative + recursive)
-- [ ] Sort an array (built-in + one manual, e.g. bubble/insertion)
-- [ ] Reverse sort (descending)
+- [x] Sort an array (built-in + one manual, e.g. bubble/insertion)
+- [x] Reverse sort (descending)
 - [ ] Reverse a string
 - [ ] Reverse an array/list in place
 - [ ] FizzBuzz

@@ -37,6 +37,7 @@ Classic phone-screen warmups (not NeetCode 150, but frequently asked).
 | [Fibonacci](./fundamentals/febonacci) | ✅ | ✅ | Iterative — series (array) + nth value (two-var slide) | O(n) | O(n) series / O(1) value |
 | [Prime Check](./fundamentals/prime) | ✅ | ✅ | Trial division to √n (`i*i <= n`) | O(√n) | O(1) |
 | [Factorial](./fundamentals/factorial) | ✅ | ✅ | Recursive (base + shrink) + iterative | O(n) | O(n) rec / O(1) iter |
+| [Sorting](./fundamentals/sorting) | ✅ | ✅ | Built-in (asc/desc, array + string) + manual bubble | O(n log n) built-in / O(n²) bubble | O(1) |
 
 ## Structure
 
