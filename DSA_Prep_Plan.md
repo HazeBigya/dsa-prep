@@ -23,6 +23,25 @@
 
 ---
 
+## Fundamentals — Warmups
+
+Not NeetCode 150, but frequent phone-screen / warmup questions. Build syntax fluency and loop/recursion reflexes before the pattern work. In `fundamentals/`.
+
+- [x] Fibonacci (iterative — series + nth value)
+- [x] Prime number check (√n bound)
+- [x] Factorial (iterative + recursive)
+- [ ] Sort an array (built-in + one manual, e.g. bubble/insertion)
+- [ ] Reverse sort (descending)
+- [ ] Reverse a string
+- [ ] Reverse an array/list in place
+- [ ] FizzBuzz
+- [ ] Sum / count of digits
+- [ ] Palindrome number (integer, no string convert)
+- [ ] GCD / LCM (Euclid's algorithm)
+- [ ] Max / min in an array (single pass)
+
+---
+
 ## Week 1 — Arrays, Hashing, Two Pointers
 
 Foundation patterns. These show up constantly and build momentum.
@@ -33,7 +52,7 @@ Foundation patterns. These show up constantly and build momentum.
 - [x] Group Anagrams
 - [x] Top K Frequent Elements
 - [x] Product of Array Except Self
-- [ ] Valid Palindrome
+- [x] Valid Palindrome
 - [ ] Two Sum II (sorted)
 - [ ] 3Sum
 - [ ] Container With Most Water

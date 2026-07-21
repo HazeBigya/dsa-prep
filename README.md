@@ -26,6 +26,17 @@ Each problem is worked the way an interview tests it:
 | [Group Anagrams](./group_anagrams) | ✅ | ✅ | Canonical-key bucketing (sorted / count) | O(n·k) | O(n·k) |
 | [Top K Frequent](./top_k_frequent) | ✅ | ✅ | Count map + sort by frequency | O(n log n) | O(n) |
 | [Product of Array Except Self](./product_of_array) | ✅ | ✅ | Prefix × suffix products (no division) | O(n) | O(1) extra |
+| [Valid Palindrome](./is_palindrome) | ✅ | ✅ | Two pointers, skip non-alnum on the fly | O(n) | O(1) |
+
+### Fundamentals / Warmups
+
+Classic phone-screen warmups (not NeetCode 150, but frequently asked).
+
+| Problem | TS | Python | Pattern | Time | Space |
+|---------|----|--------|---------|------|-------|
+| [Fibonacci](./fundamentals/febonacci) | ✅ | ✅ | Iterative — series (array) + nth value (two-var slide) | O(n) | O(n) series / O(1) value |
+| [Prime Check](./fundamentals/prime) | ✅ | ✅ | Trial division to √n (`i*i <= n`) | O(√n) | O(1) |
+| [Factorial](./fundamentals/factorial) | ✅ | ✅ | Recursive (base + shrink) + iterative | O(n) | O(n) rec / O(1) iter |
 
 ## Structure
 
