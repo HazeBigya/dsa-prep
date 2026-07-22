@@ -32,13 +32,13 @@ Not NeetCode 150, but frequent phone-screen / warmup questions. Build syntax flu
 - [x] Factorial (iterative + recursive)
 - [x] Sort an array (built-in + one manual, e.g. bubble/insertion)
 - [x] Reverse sort (descending)
-- [ ] Reverse a string
-- [ ] Reverse an array/list in place
-- [ ] FizzBuzz
-- [ ] Sum / count of digits
-- [ ] Palindrome number (integer, no string convert)
+- [x] Reverse a string
+- [x] Reverse an array/list in place
+- [x] FizzBuzz
+- [x] Sum / count of digits
+- [x] Palindrome number (integer, no string convert)
 - [ ] GCD / LCM (Euclid's algorithm)
-- [ ] Max / min in an array (single pass)
+- [x] Max / min in an array (single pass)
 
 ---
 
@@ -53,9 +53,9 @@ Foundation patterns. These show up constantly and build momentum.
 - [x] Top K Frequent Elements
 - [x] Product of Array Except Self
 - [x] Valid Palindrome
-- [ ] Two Sum II (sorted)
-- [ ] 3Sum
-- [ ] Container With Most Water
+- [x] Two Sum II (sorted)
+- [x] 3Sum
+- [x] Container With Most Water
 
 ---
 

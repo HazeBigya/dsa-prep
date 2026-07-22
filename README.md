@@ -26,6 +26,9 @@ Each problem is worked the way an interview tests it:
 | [Group Anagrams](./group_anagrams) | ✅ | ✅ | Canonical-key bucketing (sorted / count) | O(n·k) | O(n·k) |
 | [Top K Frequent](./top_k_frequent) | ✅ | ✅ | Count map + sort by frequency | O(n log n) | O(n) |
 | [Product of Array Except Self](./product_of_array) | ✅ | ✅ | Prefix × suffix products (no division) | O(n) | O(1) extra |
+| [Two Sum II (sorted)](./two_sum) | ✅ | ✅ | Two pointers converge on target (sorted input) | O(n) | O(1) |
+| [Container With Most Water](./container_with_most_water) | ✅ | ✅ | Two pointers, move the shorter wall (greedy) | O(n) | O(1) |
+| [3Sum](./three_sum) | ✅ | ✅ | Sort + fix one + two-pointer inner + dedup | O(n²) | O(1) |
 | [Valid Palindrome](./is_palindrome) | ✅ | ✅ | Two pointers, skip non-alnum on the fly | O(n) | O(1) |
 
 ### Fundamentals / Warmups
@@ -38,6 +41,11 @@ Classic phone-screen warmups (not NeetCode 150, but frequently asked).
 | [Prime Check](./fundamentals/prime) | ✅ | ✅ | Trial division to √n (`i*i <= n`) | O(√n) | O(1) |
 | [Factorial](./fundamentals/factorial) | ✅ | ✅ | Recursive (base + shrink) + iterative | O(n) | O(n) rec / O(1) iter |
 | [Sorting](./fundamentals/sorting) | ✅ | ✅ | Built-in (asc/desc, array + string) + manual bubble | O(n log n) built-in / O(n²) bubble | O(1) |
+| [Reverse](./fundamentals/reverse) | ✅ | ✅ | Two-pointer swap ends inward (string + array) | O(n) | O(1) |
+| [FizzBuzz](./fundamentals/fizzbuzz) | ✅ | ✅ | Modulo, most-specific-first (%15 before %3/%5) | O(n) | O(n) |
+| [Digits (sum + count)](./fundamentals/digits) | ✅ | ✅ | Peel digits with `% 10` + `// 10`, no string | O(d) | O(1) |
+| [Palindrome Number](./fundamentals/palindrome_number) | ✅ | ✅ | Reverse int via math (`rev*10+digit`), compare | O(d) | O(1) |
+| [Max / Min in Array](./fundamentals/max_min) | ✅ | ✅ | Single pass, seed from `nums[0]` (not 0) | O(n) | O(1) |
 
 ## Structure
 
