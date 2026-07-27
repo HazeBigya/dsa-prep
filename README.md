@@ -37,6 +37,8 @@ Each problem is worked the way an interview tests it:
 |---------|----|--------|---------|------|-------|
 | [Best Time to Buy/Sell Stock](./best_time_stock) | ✅ | ✅ | Track min-so-far, best profit selling today | O(n) | O(1) |
 | [Longest Substring Without Repeating](./longest_substring) | ✅ | ✅ | Sliding window + set; shrink L on repeat | O(n) | O(min(n,charset)) |
+| [Longest Repeating Character Replacement](./char_replacement) | ✅ | ✅ | Sliding window; valid if `windowLen − maxFreq ≤ k` | O(n) | O(26) |
+| [Valid Parentheses](./valid_parentheses) | ✅ | ✅ | Stack (LIFO); map closer→opener, pop & match | O(n) | O(n) |
 
 ### Fundamentals / Warmups
 
@@ -53,6 +55,7 @@ Classic phone-screen warmups (not NeetCode 150, but frequently asked).
 | [Digits (sum + count)](./fundamentals/digits) | ✅ | ✅ | Peel digits with `% 10` + `// 10`, no string | O(d) | O(1) |
 | [Palindrome Number](./fundamentals/palindrome_number) | ✅ | ✅ | Reverse int via math (`rev*10+digit`), compare | O(d) | O(1) |
 | [Max / Min in Array](./fundamentals/max_min) | ✅ | ✅ | Single pass, seed from `nums[0]` (not 0) | O(n) | O(1) |
+| [GCD / LCM](./fundamentals/gcd_lcm) | ✅ | ✅ | Euclid: `gcd(a,b)=gcd(b,a%b)`; `lcm=a*b/gcd` | O(log min(a,b)) | O(1) |
 
 ## Structure
 

@@ -37,7 +37,7 @@ Not NeetCode 150, but frequent phone-screen / warmup questions. Build syntax flu
 - [x] FizzBuzz
 - [x] Sum / count of digits
 - [x] Palindrome number (integer, no string convert)
-- [ ] GCD / LCM (Euclid's algorithm)
+- [x] GCD / LCM (Euclid's algorithm)
 - [x] Max / min in an array (single pass)
 
 ---
@@ -65,9 +65,9 @@ High-frequency patterns; sliding window trips up many people, so drill it.
 
 - [x] Best Time to Buy/Sell Stock
 - [x] Longest Substring Without Repeating Characters
-- [ ] Longest Repeating Character Replacement
+- [x] Longest Repeating Character Replacement
 - [ ] Minimum Window Substring (hard — attempt, learn the pattern)
-- [ ] Valid Parentheses
+- [x] Valid Parentheses
 - [ ] Min Stack
 - [ ] Evaluate Reverse Polish Notation
 - [ ] Daily Temperatures
