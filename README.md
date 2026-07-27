@@ -31,6 +31,13 @@ Each problem is worked the way an interview tests it:
 | [3Sum](./three_sum) | ✅ | ✅ | Sort + fix one + two-pointer inner + dedup | O(n²) | O(1) |
 | [Valid Palindrome](./is_palindrome) | ✅ | ✅ | Two pointers, skip non-alnum on the fly | O(n) | O(1) |
 
+### Week 2 — Sliding Window & Stack
+
+| Problem | TS | Python | Pattern | Time | Space |
+|---------|----|--------|---------|------|-------|
+| [Best Time to Buy/Sell Stock](./best_time_stock) | ✅ | ✅ | Track min-so-far, best profit selling today | O(n) | O(1) |
+| [Longest Substring Without Repeating](./longest_substring) | ✅ | ✅ | Sliding window + set; shrink L on repeat | O(n) | O(min(n,charset)) |
+
 ### Fundamentals / Warmups
 
 Classic phone-screen warmups (not NeetCode 150, but frequently asked).

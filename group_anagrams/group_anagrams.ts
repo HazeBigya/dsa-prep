@@ -28,14 +28,8 @@ function groupAnagramsOptimized(strs: string[]): string[][] {
 
 const strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
 
-const start1 = performance.now();
 const result1 = groupAnagrams(strs);
-const end1 = performance.now();
 console.log("Grouped Anagrams: ", result1);
-console.log(`Time taken: ${(end1 - start1).toFixed(4)} ms`);
 
-const start2 = performance.now();
 const result2 = groupAnagramsOptimized(strs);
-const end2 = performance.now();
 console.log("Grouped Anagrams (Optimized): ", result2);
-console.log(`Time taken (Optimized): ${(end2 - start2).toFixed(4)} ms`);

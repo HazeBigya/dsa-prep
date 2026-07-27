@@ -63,8 +63,8 @@ Foundation patterns. These show up constantly and build momentum.
 
 High-frequency patterns; sliding window trips up many people, so drill it.
 
-- [ ] Best Time to Buy/Sell Stock
-- [ ] Longest Substring Without Repeating Characters
+- [x] Best Time to Buy/Sell Stock
+- [x] Longest Substring Without Repeating Characters
 - [ ] Longest Repeating Character Replacement
 - [ ] Minimum Window Substring (hard — attempt, learn the pattern)
 - [ ] Valid Parentheses
