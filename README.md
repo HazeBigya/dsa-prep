@@ -57,12 +57,27 @@ Classic phone-screen warmups (not NeetCode 150, but frequently asked).
 | [Max / Min in Array](./fundamentals/max_min) | ✅ | ✅ | Single pass, seed from `nums[0]` (not 0) | O(n) | O(1) |
 | [GCD / LCM](./fundamentals/gcd_lcm) | ✅ | ✅ | Euclid: `gcd(a,b)=gcd(b,a%b)`; `lcm=a*b/gcd` | O(log min(a,b)) | O(1) |
 
+### System Design
+
+Co-equal track with the coding work — one design/week, laddered easy→hard. Format is reasoning + tradeoffs + ASCII diagrams (not code), each exported to PDF. Core drill: defend every choice against the obvious alternative. Terms surfaced go in [VOCAB_MAP.md](./VOCAB_MAP.md).
+
+| Design | Doc | PDF | Focus |
+|--------|-----|-----|-------|
+| [URL Shortener](./system_design/url_shortener/design.md) | ✅ | ✅ | Read-heavy, 302 vs 301, base62 codes, cache-aside, async counter, hot-key |
+
+Planned: Rate Limiter · Pastebin/Image Host · Web Crawler · Chat/Messaging · News Feed · Video Streaming · Ticketing (concurrency) · RAG/LLM Serving. Plus LLD: Elevator, Parking Lot. See [DSA_Prep_Plan.md](./DSA_Prep_Plan.md).
+
 ## Structure
 
 ```
 <problem_name>/
   <problem_name>.ts     # TypeScript solution
   <problem_name>.py     # Python solution
+
+system_design/
+  <design_name>/
+    design.md           # reasoning, tradeoffs, ASCII diagrams
+    <design_name>.pdf   # exported PDF
 ```
 
 ## Running
