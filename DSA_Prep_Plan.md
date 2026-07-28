@@ -174,11 +174,50 @@ The scariest for most; the trick is recognizing overlapping subproblems. Don't a
 
 ---
 
+## System Design Track — CO-EQUAL with DSA (not a side track)
+
+**Reprioritized 2026-07-28 after a real interview.** The wobble wasn't a LeetCode miss — it was system design + explaining-your-own-reasoning under pressure. For the roles targeted (Big Tech / AI Labs, senior/experienced), that articulation gap is the *higher-leverage* fix right now. So this is co-equal with the DSA weeks — give it equal time, not leftover time.
+
+**One design per week**, ~60–90 min: sketch it, talk it out loud, write the tradeoffs. This is where your production/backend/cloud experience shines — lean in. Laddered easy→hard, ending on your AI/RAG edge.
+
+**The core drill (do this every design, out loud): "Why THIS and not the obvious alternative?"** For every choice, name the alternative and defend against it. NoSQL — why not SQL? Cache-aside — why not write-through? Optimistic lock — why not pessimistic? This exact move — justifying a choice against its alternative on the spot — is what scattered under pressure today. Rehearse it until it's automatic. A design isn't done until you can defend every box against the thing you *didn't* pick.
+
+**Method for every design (same each time):**
+1. **Clarify requirements** — functional + non-functional (scale, latency, consistency vs availability). Ask questions, don't assume.
+2. **Back-of-envelope estimates** — QPS, storage, bandwidth. Order of magnitude.
+3. **API design** — the key endpoints/contracts.
+4. **Data model** — schema, SQL vs NoSQL and *why*.
+5. **High-level diagram** — boxes + arrows, request flow.
+6. **Deep-dive** — 1–2 components the interviewer probes (the interesting part).
+7. **Bottlenecks & tradeoffs** — what breaks at scale, how you'd fix (cache, shard, replicate, queue), CAP choices.
+
+- [ ] Wk1 — **URL Shortener (TinyURL)** — hashing/base62, KV store, read-heavy cache, redirect flow
+- [ ] Wk2 — **Rate Limiter** — token bucket vs sliding window, where it lives, distributed counter (Redis)
+- [ ] Wk3 — **Pastebin / Image Host** — blob storage (S3), CDN, metadata DB, TTL/expiry
+- [ ] Wk4 — **Web Crawler** — BFS at scale, URL dedup (bloom filter), politeness, distributed workers + queue
+- [ ] Wk5 — **Chat / Messaging (WhatsApp)** — websockets, presence, message fanout, delivery guarantees, queues
+- [ ] Wk6 — **News Feed (Twitter/Instagram)** — fanout-on-write vs on-read, timeline cache, celebrity problem
+- [ ] Wk7 — **Video Streaming (YouTube/Netflix)** — upload+transcode pipeline, CDN, adaptive bitrate, storage tiers
+- [ ] Wk7 — **Ticketing System (50k seats, 500k concurrent users)** — THE concurrency problem. Seat locking (optimistic vs pessimistic), preventing overselling, reservation hold + TTL, virtual waiting room / queue (Ticketmaster-style), idempotent booking, DB row-lock vs Redis lock, payment saga. Deep-dive the race condition: two users, one seat.
+- [ ] Wk8 — **RAG / LLM Serving System** (your edge) — vector DB, embedding pipeline, retrieval + rerank, chunking, caching, latency/cost tradeoffs, eval
+
+*(Wk7 has two designs — Video Streaming + Ticketing. Do Ticketing if you only have time for one; the concurrency deep-dive is higher-signal for most interviews.)*
+
+### Low-Level / OOD Design (separate interview format)
+
+Some rounds want **object-oriented design** — classes, interfaces, state machines, design patterns — not distributed boxes-and-arrows. Whiteboard the class diagram + key methods.
+
+- [ ] **Elevator System** — `Elevator`, `Floor`, `Request`, `Scheduler`. State machine (idle/up/down/maintenance). Scheduling algo (SCAN/LOOK vs naive FCFS). Multi-elevator dispatch. Thread-safety of the request queue. This is a state-machine + strategy-pattern problem, not a QPS/sharding one.
+- [ ] **Parking Lot**, **Vending Machine**, **Chess/Tic-Tac-Toe** — other common LLD warmups if asked.
+
+**Resources:** *System Design Interview* (Alex Xu vol 1+2), ByteByteGo, the Grokking course. For LLD: *Head First Design Patterns*, refactoring.guru. But don't just read — *produce* a design each week, out loud.
+
 ## Ongoing habits (keep after week 8)
 
 - [ ] 1–2 problems/day maintenance so skills don't decay
 - [ ] Weekly: one timed mock, out loud
 - [ ] Keep a "mistakes log" — patterns you keep missing; review before interviews
+- [ ] **Vocabulary map** ([VOCAB_MAP.md](./VOCAB_MAP.md)) — running two-column doc: LEFT = how you describe your real work in plain words, RIGHT = the textbook term. Your recurring gap is *knowing the thing but not the formal word* (e.g. "status change so first wins" → optimistic locking / atomic conditional write). Add a row every time it happens. Review before every interview. Highest ROI habit — an afternoon of work, not eight weeks.
 - [ ] Balance with **system design** prep (separate track) and your **AI/RAG depth** (your edge)
 
 ---
