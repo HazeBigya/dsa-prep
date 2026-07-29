@@ -68,8 +68,8 @@ High-frequency patterns; sliding window trips up many people, so drill it.
 - [x] Longest Repeating Character Replacement
 - [ ] Minimum Window Substring (hard — attempt, learn the pattern)
 - [x] Valid Parentheses
-- [ ] Min Stack
-- [ ] Evaluate Reverse Polish Notation
+- [x] Min Stack
+- [x] Evaluate Reverse Polish Notation
 - [ ] Daily Temperatures
 - [ ] Car Fleet
 - [ ] Largest Rectangle in Histogram (hard — pattern exposure)

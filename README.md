@@ -39,6 +39,8 @@ Each problem is worked the way an interview tests it:
 | [Longest Substring Without Repeating](./longest_substring) | ✅ | ✅ | Sliding window + set; shrink L on repeat | O(n) | O(min(n,charset)) |
 | [Longest Repeating Character Replacement](./char_replacement) | ✅ | ✅ | Sliding window; valid if `windowLen − maxFreq ≤ k` | O(n) | O(26) |
 | [Valid Parentheses](./valid_parentheses) | ✅ | ✅ | Stack (LIFO); map closer→opener, pop & match | O(n) | O(n) |
+| [Min Stack](./min_stack) | ✅ | ✅ | Parallel min-stack; push min-so-far, pop together | O(1) all ops | O(n) |
+| [Evaluate RPN](./eval_rpn) | ✅ | ✅ | Stack; push nums, operator pops 2 & pushes result | O(n) | O(n) |
 
 ### Fundamentals / Warmups
 
