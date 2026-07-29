@@ -70,8 +70,8 @@ High-frequency patterns; sliding window trips up many people, so drill it.
 - [x] Valid Parentheses
 - [x] Min Stack
 - [x] Evaluate Reverse Polish Notation
-- [ ] Daily Temperatures
-- [ ] Car Fleet
+- [x] Daily Temperatures
+- [x] Car Fleet
 - [ ] Largest Rectangle in Histogram (hard — pattern exposure)
 
 ---
