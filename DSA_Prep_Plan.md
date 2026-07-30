@@ -66,7 +66,7 @@ High-frequency patterns; sliding window trips up many people, so drill it.
 - [x] Best Time to Buy/Sell Stock
 - [x] Longest Substring Without Repeating Characters
 - [x] Longest Repeating Character Replacement
-- [ ] Minimum Window Substring (hard — attempt, learn the pattern)
+- [x] Minimum Window Substring (hard — attempt, learn the pattern)
 - [x] Valid Parentheses
 - [x] Min Stack
 - [x] Evaluate Reverse Polish Notation
