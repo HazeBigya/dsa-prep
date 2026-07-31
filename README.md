@@ -44,6 +44,7 @@ Each problem is worked the way an interview tests it:
 | [Daily Temperatures](./daily_temperatures) | ✅ | ✅ | Monotonic stack of indices; pop when warmer, gap = i−idx | O(n) | O(n) |
 | [Car Fleet](./car_fleet) | ✅ | ✅ | Sort by pos desc; stack of arrival times; new fleet if time > top | O(n log n) | O(n) |
 | [Minimum Window Substring](./min_window_substring) 🔴 | ✅ | ✅ | Variable window; need/have counter; grow to valid, shrink to min | O(s+t) | O(t) |
+| [Largest Rectangle in Histogram](./largest_rectangle) | ✅ | ✅ | Monotonic stack of indices; pop taller, width = i−stack[-1]−1, drain with n | O(n) | O(n) |
 
 ### Fundamentals / Warmups
 

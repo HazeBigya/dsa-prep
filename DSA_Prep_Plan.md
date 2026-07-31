@@ -72,7 +72,7 @@ High-frequency patterns; sliding window trips up many people, so drill it.
 - [x] Evaluate Reverse Polish Notation
 - [x] Daily Temperatures
 - [x] Car Fleet
-- [ ] Largest Rectangle in Histogram (hard — pattern exposure)
+- [x] Largest Rectangle in Histogram (hard — pattern exposure)
 
 ---
 
