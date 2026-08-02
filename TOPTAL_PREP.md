@@ -56,6 +56,72 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 
 Realistic: nail the ~12 Easy/Medium ⬜ items + your 3 done = strong coverage. Don't chase the Hards.
 
+## 🪜 Foundation → Target Ladders (HOW to practice)
+
+Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundation (often already ✅), then the top-20 target that stands on it. Never attempt a target with a shaky foundation. `✅`=done, `⬜`=to do, `🔁`=done but needs a cold redo first.
+
+### Ladder 1 — Hash Map  (your strongest; fast wins)
+`Two Sum ✅` → `Valid Anagram ✅` → `Contains Duplicate ✅`
+  ↳ **Isomorphic Strings ⬜** (#5, two-way map)
+  ↳ **Check If N and Its Double Exist ⬜** (#18, hash set)
+  ↳ **Invalid Transactions ⬜** (#1, map + parsing — hardest of the three)
+
+### Ladder 2 — Prefix Sum  (GAP → high value)
+`(new) understand running sum` → `(new) simple subarray-sum`
+  ↳ **Subarray Sum Equals K ⬜** (#2, prefix sum + hashmap of seen sums)
+
+### Ladder 3 — Kadane / Max Subarray  (GAP → high value)
+`(new) Maximum Subarray (plain Kadane) ⬜`
+  ↳ **Maximum Sum Circular Subarray ⬜** (#10, Kadane twice: normal max + wrap-around)
+
+### Ladder 4 — Sliding Window
+`Longest Substring 🔁` → `Char Replacement ✅`
+  ↳ **Continuous Subarrays ⬜** (#9, window + monotonic deque)
+
+### Ladder 5 — Two-Pointer / Sort
+`Two Sum II ✅` → `Valid Palindrome 🔁`
+  ↳ **3Sum ✅** (#3) — already climbed
+
+### Ladder 6 — Stack
+`Valid Parens ✅` → `Daily Temperatures ✅ (monotonic)`
+  ↳ **Largest Rectangle ✅** (#12) — already climbed
+
+### Ladder 7 — Heap / heapq  (new territory)
+`(new) heapq basics` → `Top K Frequent ✅ (heap variant)`
+  ↳ **Reorganize String ⬜** (#14, heap + greedy)
+  ↳ **Find K Pairs with Smallest Sums ⬜** (#19, heap)
+
+### Ladder 8 — Trees  (new; keep basic)
+`(new) Max Depth ⬜` → `(new) tree traversal (DFS + BFS/level-order) ⬜`
+  ↳ **Diameter of Binary Tree ⬜** (#4, easy, DFS returning height)
+  ↳ **Binary Tree Vertical Order Traversal ⬜** (#16, BFS + column map)
+
+### Ladder 9 — Graph / Grid  (new; worth 2-3)
+`(new) Number of Islands ⬜ (DFS/BFS grid)`
+  ↳ **Number of Distinct Islands ⬜** (#15)
+  ↳ **Accounts Merge ⬜** (#6, union-find or DFS on graph)
+
+### Ladder 10 — Backtracking  (lowest priority; only if time)
+`(new) Subsets ⬜` → **Combination Sum II ⬜** (#20)
+
+---
+
+## 16-Day Schedule (foundation-first, ROI-ordered)
+
+| Days | Ladders | Why |
+|---|---|---|
+| **1-2** | Ladder 1 (Hash Map targets) | foundation done → 3 fast wins, build confidence |
+| **3-4** | Ladder 2 (Prefix Sum) + Ladder 3 (Kadane) | fills your 2 gaps + both are top-10 asked |
+| **5** | Ladder 4 (redo Longest Substring, then Continuous Subarrays) | sliding-window refresh |
+| **6-8** | Ladder 8 (Trees: Max Depth → traversal → Diameter → Vertical Order) | new territory, needs the most ramp |
+| **9-10** | Ladder 7 (Heap: heapq → Reorganize → K Pairs) | new stdlib tool |
+| **11-12** | Ladder 9 (Graph: Islands → Distinct Islands → Accounts Merge) | new territory |
+| **13** | Cold-redo weak spots (bucket sort, Min Window, anything 🔁) | lock the shaky ones |
+| **14-15** | Full narrated MOCKS — cold, timed, camera on | interview sim |
+| **16** | Light review + rest. Interview. |
+
+**Rule:** if a foundation rung feels shaky, redo IT before climbing to the target. Foundation solid = target is easy.
+
 ## The Tiers (practice top-down; master Tier 1 before touching Tier 3)
 
 ### 🥇 TIER 1 — ~70% of what you'll see. MASTER THESE.
