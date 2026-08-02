@@ -17,6 +17,45 @@
 
 ---
 
+## ⭐ MOST-ASKED — Priority Targets (Top 20, ranked by reported frequency)
+
+The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/drills), `⬜`=to do, `⏭️`=skip (rare + hard, low ROI for 18 days). Source: interviewsolver aggregate — mixes Codility+live; your LIVE round skews to the Easy/Medium ones.
+
+| # | Problem | Freq | Diff | Pattern | Status |
+|---|---------|------|------|---------|--------|
+| 1 | Invalid Transactions | 100% | Med | hash map / parsing | ⬜ |
+| 2 | Subarray Sum Equals K | 92% | Med | **prefix sum + hashmap** | ⬜ |
+| 3 | 3Sum | 90% | Med | sort + two-pointer | ✅ |
+| 4 | Diameter of Binary Tree | 90% | Easy | tree DFS | ⬜ |
+| 5 | Isomorphic Strings | 88% | Easy | hash map (two-way) | ⬜ |
+| 6 | Accounts Merge | 82% | Med | union-find / graph | ⬜ |
+| 7 | Rank Transform of a Matrix | 79% | Hard | union-find | ⏭️ |
+| 8 | Zero Array Transformation II | 76% | Med | greedy + diff array | ⬜ |
+| 9 | Continuous Subarrays | 75% | Med | sliding window + deque | ⬜ |
+| 10 | Maximum Sum Circular Subarray | 75% | Med | **Kadane variant** | ⬜ |
+| 11 | Bus Routes | 74% | Hard | BFS | ⏭️ |
+| 12 | Largest Rectangle in Histogram | 73% | Hard | monotonic stack | ✅ |
+| 13 | Median of Two Sorted Arrays | 67% | Hard | binary search | ⏭️ |
+| 14 | Reorganize String | 67% | Med | heap + greedy | ⬜ |
+| 15 | Number of Distinct Islands | 63% | Med | DFS/BFS grid | ⬜ |
+| 16 | Binary Tree Vertical Order Traversal | 61% | Med | tree BFS + map | ⬜ |
+| 17 | Top K Frequent Elements | 61% | Med | bucket sort | ✅ |
+| 18 | Check If N and Its Double Exist | 61% | Easy | hash set | ⬜ |
+| 19 | Find K Pairs with Smallest Sums | 57% | Med | heap | ⬜ |
+| 20 | Combination Sum II | 57% | Med | backtracking | ⬜ |
+
+**Also already done (further down the 34-list):** Longest Repeating Char Replacement (#28), Minimum Window Substring (#34).
+
+### 18-day attack order on this list (highest ROI first)
+1. **Easy hash/array wins** (fast confidence + high freq): Isomorphic Strings (#5), Check N and Double (#18), Diameter of Binary Tree (#4)
+2. **Prefix sum + Kadane** (fills your gaps AND top-asked): Subarray Sum Equals K (#2), Maximum Sum Circular Subarray (#10)
+3. **Hash-map mediums:** Invalid Transactions (#1), Reorganize String (#14, also heap)
+4. **Graph basics** (union-find/DFS — worth 1-2): Accounts Merge (#6), Number of Distinct Islands (#15)
+5. **Heap:** Find K Pairs (#19) — after Reorganize warms up heapq
+6. **Skip unless time:** all Hards marked ⏭️, Combination Sum II (backtracking, lower freq)
+
+Realistic: nail the ~12 Easy/Medium ⬜ items + your 3 done = strong coverage. Don't chase the Hards.
+
 ## The Tiers (practice top-down; master Tier 1 before touching Tier 3)
 
 ### 🥇 TIER 1 — ~70% of what you'll see. MASTER THESE.
