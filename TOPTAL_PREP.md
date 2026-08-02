@@ -21,10 +21,10 @@
 
 ### 🥇 TIER 1 — ~70% of what you'll see. MASTER THESE.
 Hash maps + arrays + strings + sliding window. Get them automatic + narrated.
-- [ ] Two Sum (hash map)
-- [ ] Valid Anagram / Group Anagrams (hash map keys)
-- [ ] Contains Duplicate / frequency counting
-- [ ] Top K Frequent (Counter + bucket)
+- [x] Two Sum (hash map)
+- [x] Valid Anagram / Group Anagrams (hash map keys)
+- [x] Contains Duplicate / frequency counting
+- [x] Top K Frequent (Counter + bucket)
 - [ ] First Non-Repeating Character (hash map) ← new, very common
 - [ ] Longest Substring Without Repeating Characters (sliding window)  ← TIER 1
 - [ ] Longest Repeating Character Replacement (sliding window)

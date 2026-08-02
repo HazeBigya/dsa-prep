@@ -73,6 +73,18 @@ Co-equal track with the coding work — one design/week, laddered easy→hard. F
 
 Planned: Rate Limiter · Pastebin/Image Host · Web Crawler · Chat/Messaging · News Feed · Video Streaming · Ticketing (concurrency) · RAG/LLM Serving. Plus LLD: Elevator, Parking Lot. See [DSA_Prep_Plan.md](./DSA_Prep_Plan.md).
 
+### Drills
+
+Timed, narrated cold-redos in Python — solved fresh (no peeking at old solutions), explaining the approach out loud like a live interview. Interview-fluency practice, not new material.
+
+| Problem | Pattern | Time | Space |
+|---------|---------|------|-------|
+| [Two Sum](./toptal_drill/two_sum.py) | Hash map (complement lookup) | O(n) | O(n) |
+| [Valid Anagram](./toptal_drill/valid_anagram.py) | Char-count maps compared | O(n) | O(n) |
+| [Group Anagrams](./toptal_drill/group_anagrams.py) | Canonical-key bucketing (sorted key) | O(n·k log k) | O(n·k) |
+| [Top K Frequent](./toptal_drill/top_k_frequent.py) | Counter + bucket sort by frequency | O(n) | O(n) |
+| [Contains Duplicate](./toptal_drill/contains_duplicate.py) | Set membership, early exit | O(n) | O(n) |
+
 ## Structure
 
 ```
