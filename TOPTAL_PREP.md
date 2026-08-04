@@ -27,7 +27,7 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 | 2 | Subarray Sum Equals K | 92% | Med | **prefix sum + hashmap** | ⬜ |
 | 3 | 3Sum | 90% | Med | sort + two-pointer | ✅ |
 | 4 | Diameter of Binary Tree | 90% | Easy | tree DFS | ⬜ |
-| 5 | Isomorphic Strings | 88% | Easy | hash map (two-way) | ⬜ |
+| 5 | Isomorphic Strings | 88% | Easy | hash map (two-way) | ✅ |
 | 6 | Accounts Merge | 82% | Med | union-find / graph | ⬜ |
 | 7 | Rank Transform of a Matrix | 79% | Hard | union-find | ⏭️ |
 | 8 | Zero Array Transformation II | 76% | Med | greedy + diff array | ⬜ |
@@ -62,7 +62,7 @@ Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundatio
 
 ### Ladder 1 — Hash Map  (your strongest; fast wins)
 `Two Sum ✅` → `Valid Anagram ✅` → `Contains Duplicate ✅`
-  ↳ **Isomorphic Strings ⬜** (#5, two-way map)
+  ↳ **Isomorphic Strings ✅** (#5, two-way map, two-map version locked; set version had a nested-if bug to fix)
   ↳ **Check If N and Its Double Exist ⬜** (#18, hash set)
   ↳ **Invalid Transactions ⬜** (#1, map + parsing — hardest of the three)
 
