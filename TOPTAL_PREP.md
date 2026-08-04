@@ -40,7 +40,7 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 | 15 | Number of Distinct Islands | 63% | Med | DFS/BFS grid | ⬜ |
 | 16 | Binary Tree Vertical Order Traversal | 61% | Med | tree BFS + map | ⬜ |
 | 17 | Top K Frequent Elements | 61% | Med | bucket sort | ✅ |
-| 18 | Check If N and Its Double Exist | 61% | Easy | hash set | ⬜ |
+| 18 | Check If N and Its Double Exist | 61% | Easy | hash set | ✅ |
 | 19 | Find K Pairs with Smallest Sums | 57% | Med | heap | ⬜ |
 | 20 | Combination Sum II | 57% | Med | backtracking | ⬜ |
 
@@ -63,7 +63,7 @@ Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundatio
 ### Ladder 1 — Hash Map  (your strongest; fast wins)
 `Two Sum ✅` → `Valid Anagram ✅` → `Contains Duplicate ✅`
   ↳ **Isomorphic Strings ✅** (#5, two-way map, two-map version locked; set version had a nested-if bug to fix)
-  ↳ **Check If N and Its Double Exist ⬜** (#18, hash set)
+  ↳ **Check If N and Its Double Exist ✅** (#18, hash set, one-pass both-directions)
   ↳ **Invalid Transactions ⬜** (#1, map + parsing — hardest of the three)
 
 ### Ladder 2 — Prefix Sum  (GAP → high value)
