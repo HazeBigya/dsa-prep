@@ -77,13 +77,34 @@ Planned: Rate Limiter · Pastebin/Image Host · Web Crawler · Chat/Messaging ·
 
 Timed, narrated cold-redos in Python — solved fresh (no peeking at old solutions), explaining the approach out loud like a live interview. Interview-fluency practice, not new material.
 
-| Problem | Pattern | Time | Space |
-|---------|---------|------|-------|
-| [Two Sum](./toptal_drill/two_sum.py) | Hash map (complement lookup) | O(n) | O(n) |
-| [Valid Anagram](./toptal_drill/valid_anagram.py) | Char-count maps compared | O(n) | O(n) |
-| [Group Anagrams](./toptal_drill/group_anagrams.py) | Canonical-key bucketing (sorted key) | O(n·k log k) | O(n·k) |
-| [Top K Frequent](./toptal_drill/top_k_frequent.py) | Counter + bucket sort by frequency | O(n) | O(n) |
-| [Contains Duplicate](./toptal_drill/contains_duplicate.py) | Set membership, early exit | O(n) | O(n) |
+Organized as **foundation → target ladders**: master the foundation rung, then climb to the higher-frequency target that stands on it. `★` = a top-asked target problem.
+
+**Ladder 1 — Hash Map / Set** *(complete)*
+
+| Problem | Rung | Pattern | Time | Space |
+|---------|------|---------|------|-------|
+| [Two Sum](./toptal_drill/two_sum.py) | foundation | Hash map (complement lookup) | O(n) | O(n) |
+| [Valid Anagram](./toptal_drill/valid_anagram.py) | foundation | Char-count maps compared | O(n) | O(n) |
+| [Group Anagrams](./toptal_drill/group_anagrams.py) | foundation | Canonical-key bucketing (sorted key) | O(n·k log k) | O(n·k) |
+| [Contains Duplicate](./toptal_drill/contains_duplicate.py) | foundation | Set membership, early exit | O(n) | O(n) |
+| [Top K Frequent](./toptal_drill/top_k_frequent.py) ★ | target | Counter + bucket sort by frequency | O(n) | O(n) |
+| [Isomorphic Strings](./toptal_drill/isomorphic_strings.py) ★ | target | Two-way map (or one map + used set) | O(n) | O(n) |
+| [Check If N and Its Double Exist](./toptal_drill/check_n_double.py) ★ | target | One-pass set, check `2x` and `x/2` | O(n) | O(n) |
+| [Invalid Transactions](./toptal_drill/invalid_transactions.py) ★ | target | Group by name + inner conflict scan | O(n²) | O(n) |
+
+**Ladder 2 — Prefix Sum** *(complete)*
+
+| Problem | Rung | Pattern | Time | Space |
+|---------|------|---------|------|-------|
+| [Subarray Sum Equals K](./toptal_drill/subarray_sum_equals_k.py) ★ | target | Running sum + hashmap of seen sums; count `running − k` | O(n) | O(n) |
+
+**Ladder 5 — Two-Pointer / Sort**
+
+| Problem | Rung | Pattern | Time | Space |
+|---------|------|---------|------|-------|
+| [3Sum](./three_sum/three_sum.py) ★ | target | Sort + fix one + two-pointer + dedup | O(n²) | O(n) |
+
+Next ladders in queue: Kadane (Max Sum Circular Subarray), then Trees / Heap / Graph basics. See [TOPTAL_PREP.md](./TOPTAL_PREP.md) for the full ladder map + schedule.
 
 ## Structure
 

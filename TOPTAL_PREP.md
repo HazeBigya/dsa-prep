@@ -23,8 +23,8 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 
 | # | Problem | Freq | Diff | Pattern | Status |
 |---|---------|------|------|---------|--------|
-| 1 | Invalid Transactions | 100% | Med | hash map / parsing | ⬜ |
-| 2 | Subarray Sum Equals K | 92% | Med | **prefix sum + hashmap** | ⬜ |
+| 1 | Invalid Transactions | 100% | Med | hash map / parsing | ✅ |
+| 2 | Subarray Sum Equals K | 92% | Med | **prefix sum + hashmap** | ✅ |
 | 3 | 3Sum | 90% | Med | sort + two-pointer | ✅ |
 | 4 | Diameter of Binary Tree | 90% | Easy | tree DFS | ⬜ |
 | 5 | Isomorphic Strings | 88% | Easy | hash map (two-way) | ✅ |
@@ -64,11 +64,11 @@ Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundatio
 `Two Sum ✅` → `Valid Anagram ✅` → `Contains Duplicate ✅`
   ↳ **Isomorphic Strings ✅** (#5, two-way map, two-map version locked; set version had a nested-if bug to fix)
   ↳ **Check If N and Its Double Exist ✅** (#18, hash set, one-pass both-directions)
-  ↳ **Invalid Transactions ⬜** (#1, map + parsing — hardest of the three)
+  ↳ **Invalid Transactions ✅** (#1, group-by-name + inner conflict scan — LADDER 1 COMPLETE)
 
 ### Ladder 2 — Prefix Sum  (GAP → high value)
 `(new) understand running sum` → `(new) simple subarray-sum`
-  ↳ **Subarray Sum Equals K ⬜** (#2, prefix sum + hashmap of seen sums)
+  ↳ **Subarray Sum Equals K ✅** (#2, prefix sum + hashmap of seen sums — LADDER 2 COMPLETE)
 
 ### Ladder 3 — Kadane / Max Subarray  (GAP → high value)
 `(new) Maximum Subarray (plain Kadane) ⬜`
