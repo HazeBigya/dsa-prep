@@ -32,7 +32,7 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 | 7 | Rank Transform of a Matrix | 79% | Hard | union-find | ⏭️ |
 | 8 | Zero Array Transformation II | 76% | Med | greedy + diff array | ⬜ |
 | 9 | Continuous Subarrays | 75% | Med | sliding window + deque | ⬜ |
-| 10 | Maximum Sum Circular Subarray | 75% | Med | **Kadane variant** | ⬜ |
+| 10 | Maximum Sum Circular Subarray | 75% | Med | **Kadane variant** | ✅ |
 | 11 | Bus Routes | 74% | Hard | BFS | ⏭️ |
 | 12 | Largest Rectangle in Histogram | 73% | Hard | monotonic stack | ✅ |
 | 13 | Median of Two Sorted Arrays | 67% | Hard | binary search | ⏭️ |
@@ -70,9 +70,9 @@ Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundatio
 `(new) understand running sum` → `(new) simple subarray-sum`
   ↳ **Subarray Sum Equals K ✅** (#2, prefix sum + hashmap of seen sums — LADDER 2 COMPLETE)
 
-### Ladder 3 — Kadane / Max Subarray  (GAP → high value)
-`(new) Maximum Subarray (plain Kadane) ⬜`
-  ↳ **Maximum Sum Circular Subarray ⬜** (#10, Kadane twice: normal max + wrap-around)
+### Ladder 3 — Kadane / Max Subarray  (GAP → high value) *(complete)*
+`Maximum Subarray (plain Kadane) 🔁`
+  ↳ **Maximum Sum Circular Subarray 🔁** (#10, Kadane twice: normal max + wrap-around)
 
 ### Ladder 4 — Sliding Window
 `Longest Substring 🔁` → `Char Replacement ✅`
@@ -92,7 +92,7 @@ Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundatio
   ↳ **Find K Pairs with Smallest Sums ⬜** (#19, heap)
 
 ### Ladder 8 — Trees  (new; keep basic)
-`(new) Max Depth ⬜` → `(new) tree traversal (DFS + BFS/level-order) ⬜`
+`Max Depth 🔁` → `(new) tree traversal (DFS + BFS/level-order) ⬜`
   ↳ **Diameter of Binary Tree ⬜** (#4, easy, DFS returning height)
   ↳ **Binary Tree Vertical Order Traversal ⬜** (#16, BFS + column map)
 

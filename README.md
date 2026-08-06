@@ -98,13 +98,26 @@ Organized as **foundation → target ladders**: master the foundation rung, then
 |---------|------|---------|------|-------|
 | [Subarray Sum Equals K](./toptal_drill/subarray_sum_equals_k.py) ★ | target | Running sum + hashmap of seen sums; count `running − k` | O(n) | O(n) |
 
+**Ladder 3 — Kadane / Max Subarray** *(complete)*
+
+| Problem | Rung | Pattern | Time | Space |
+|---------|------|---------|------|-------|
+| [Maximum Subarray](./toptal_drill/maximum_subarray.py) | foundation | Kadane — `max(start fresh, extend)`, seed best=nums[0] | O(n) | O(1) |
+| [Maximum Sum Circular Subarray](./toptal_drill/maximum_circular_subarray.py) ★ | target | Kadane ×2 (max + min); `wrap = total − minSum`; all-neg guard | O(n) | O(1) |
+
 **Ladder 5 — Two-Pointer / Sort**
 
 | Problem | Rung | Pattern | Time | Space |
 |---------|------|---------|------|-------|
 | [3Sum](./three_sum/three_sum.py) ★ | target | Sort + fix one + two-pointer + dedup | O(n²) | O(n) |
 
-Next ladders in queue: Kadane (Max Sum Circular Subarray), then Trees / Heap / Graph basics. See [TOPTAL_PREP.md](./TOPTAL_PREP.md) for the full ladder map + schedule.
+**Ladder 8 — Trees** *(started)*
+
+| Problem | Rung | Pattern | Time | Space |
+|---------|------|---------|------|-------|
+| [Maximum Depth of Binary Tree](./toptal_drill/maximum_depth_binary_tree.py) | foundation | DFS recursion; `max(left,right)+1`, base `None→0` | O(n) | O(h) |
+
+Next ladders in queue: Trees targets (Diameter #4, Vertical Order #16), then Heap / Graph basics. See [TOPTAL_PREP.md](./TOPTAL_PREP.md) for the full ladder map + schedule.
 
 ## Structure
 
