@@ -26,7 +26,7 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 | 1 | Invalid Transactions | 100% | Med | hash map / parsing | ✅ |
 | 2 | Subarray Sum Equals K | 92% | Med | **prefix sum + hashmap** | ✅ |
 | 3 | 3Sum | 90% | Med | sort + two-pointer | ✅ |
-| 4 | Diameter of Binary Tree | 90% | Easy | tree DFS | ⬜ |
+| 4 | Diameter of Binary Tree | 90% | Easy | tree DFS | 🔁 |
 | 5 | Isomorphic Strings | 88% | Easy | hash map (two-way) | ✅ |
 | 6 | Accounts Merge | 82% | Med | union-find / graph | ⬜ |
 | 7 | Rank Transform of a Matrix | 79% | Hard | union-find | ⏭️ |
@@ -93,7 +93,7 @@ Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundatio
 
 ### Ladder 8 — Trees  (new; keep basic)
 `Max Depth 🔁` → `(new) tree traversal (DFS + BFS/level-order) ⬜`
-  ↳ **Diameter of Binary Tree ⬜** (#4, easy, DFS returning height)
+  ↳ **Diameter of Binary Tree 🔁** (#4, code written correct; return-vs-track split needs a cold redo — explanation was shaky)
   ↳ **Binary Tree Vertical Order Traversal ⬜** (#16, BFS + column map)
 
 ### Ladder 9 — Graph / Grid  (new; worth 2-3)
