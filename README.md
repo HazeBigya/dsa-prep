@@ -18,33 +18,124 @@ Each problem is worked the way an interview tests it:
 
 ### Week 1 — Arrays, Hashing, Two Pointers
 
-| Problem | TS | Python | Pattern | Time | Space |
-|---------|----|--------|---------|------|-------|
-| [Two Sum](./two_sum) | ✅ | ✅ | Hash map (value → index) | O(n) | O(n) |
-| [Contains Duplicate](./contains_duplicate) | ✅ | ✅ | Set membership | O(n) | O(n) |
-| [Valid Anagram](./valid_anagram) | ✅ | ✅ | Char-count map | O(n) | O(1) |
-| [Group Anagrams](./group_anagrams) | ✅ | ✅ | Canonical-key bucketing (sorted / count) | O(n·k) | O(n·k) |
-| [Top K Frequent](./top_k_frequent) | ✅ | ✅ | Count map + sort by frequency | O(n log n) | O(n) |
-| [Product of Array Except Self](./product_of_array) | ✅ | ✅ | Prefix × suffix products (no division) | O(n) | O(1) extra |
-| [Two Sum II (sorted)](./two_sum) | ✅ | ✅ | Two pointers converge on target (sorted input) | O(n) | O(1) |
-| [Container With Most Water](./container_with_most_water) | ✅ | ✅ | Two pointers, move the shorter wall (greedy) | O(n) | O(1) |
-| [3Sum](./three_sum) | ✅ | ✅ | Sort + fix one + two-pointer inner + dedup | O(n²) | O(1) |
-| [Valid Palindrome](./is_palindrome) | ✅ | ✅ | Two pointers, skip non-alnum on the fly | O(n) | O(1) |
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| [Two Sum](./two_sum) | ✅ | ✅ | ⏳ pending | Hash map (value → index) | O(n) | O(n) |
+| [Contains Duplicate](./contains_duplicate) | ✅ | ✅ | ⏳ pending | Set membership | O(n) | O(n) |
+| [Valid Anagram](./valid_anagram) | ✅ | ✅ | ⏳ pending | Char-count map | O(n) | O(1) |
+| [Group Anagrams](./group_anagrams) | ✅ | ✅ | ⏳ pending | Canonical-key bucketing (sorted / count) | O(n·k) | O(n·k) |
+| [Top K Frequent](./top_k_frequent) | ✅ | ✅ | ⏳ pending | Count map + sort by frequency | O(n log n) | O(n) |
+| [Product of Array Except Self](./product_of_array) | ✅ | ✅ | — | Prefix × suffix products (no division) | O(n) | O(1) extra |
+| [Two Sum II (sorted)](./two_sum) | ✅ | ✅ | — | Two pointers converge on target (sorted input) | O(n) | O(1) |
+| [Container With Most Water](./container_with_most_water) | ✅ | ✅ | — | Two pointers, move the shorter wall (greedy) | O(n) | O(1) |
+| [3Sum](./three_sum) | ✅ | ✅ | ⏳ pending | Sort + fix one + two-pointer inner + dedup | O(n²) | O(1) |
+| [Valid Palindrome](./is_palindrome) | ✅ | ✅ | — | Two pointers, skip non-alnum on the fly | O(n) | O(1) |
 
 ### Week 2 — Sliding Window & Stack
 
-| Problem | TS | Python | Pattern | Time | Space |
-|---------|----|--------|---------|------|-------|
-| [Best Time to Buy/Sell Stock](./best_time_stock) | ✅ | ✅ | Track min-so-far, best profit selling today | O(n) | O(1) |
-| [Longest Substring Without Repeating](./longest_substring) | ✅ | ✅ | Sliding window + set; shrink L on repeat | O(n) | O(min(n,charset)) |
-| [Longest Repeating Character Replacement](./char_replacement) | ✅ | ✅ | Sliding window; valid if `windowLen − maxFreq ≤ k` | O(n) | O(26) |
-| [Valid Parentheses](./valid_parentheses) | ✅ | ✅ | Stack (LIFO); map closer→opener, pop & match | O(n) | O(n) |
-| [Min Stack](./min_stack) | ✅ | ✅ | Parallel min-stack; push min-so-far, pop together | O(1) all ops | O(n) |
-| [Evaluate RPN](./eval_rpn) | ✅ | ✅ | Stack; push nums, operator pops 2 & pushes result | O(n) | O(n) |
-| [Daily Temperatures](./daily_temperatures) | ✅ | ✅ | Monotonic stack of indices; pop when warmer, gap = i−idx | O(n) | O(n) |
-| [Car Fleet](./car_fleet) | ✅ | ✅ | Sort by pos desc; stack of arrival times; new fleet if time > top | O(n log n) | O(n) |
-| [Minimum Window Substring](./min_window_substring) 🔴 | ✅ | ✅ | Variable window; need/have counter; grow to valid, shrink to min | O(s+t) | O(t) |
-| [Largest Rectangle in Histogram](./largest_rectangle) | ✅ | ✅ | Monotonic stack of indices; pop taller, width = i−stack[-1]−1, drain with n | O(n) | O(n) |
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| [Best Time to Buy/Sell Stock](./best_time_stock) | ✅ | ✅ | — | Track min-so-far, best profit selling today | O(n) | O(1) |
+| [Longest Substring Without Repeating](./longest_substring) | ✅ | ✅ | — | Sliding window + set; shrink L on repeat | O(n) | O(min(n,charset)) |
+| [Longest Repeating Character Replacement](./char_replacement) | ✅ | ✅ | — | Sliding window; valid if `windowLen − maxFreq ≤ k` | O(n) | O(26) |
+| [Valid Parentheses](./valid_parentheses) | ✅ | ✅ | — | Stack (LIFO); map closer→opener, pop & match | O(n) | O(n) |
+| [Min Stack](./min_stack) | ✅ | ✅ | — | Parallel min-stack; push min-so-far, pop together | O(1) all ops | O(n) |
+| [Evaluate RPN](./eval_rpn) | ✅ | ✅ | — | Stack; push nums, operator pops 2 & pushes result | O(n) | O(n) |
+| [Daily Temperatures](./daily_temperatures) | ✅ | ✅ | — | Monotonic stack of indices; pop when warmer, gap = i−idx | O(n) | O(n) |
+| [Car Fleet](./car_fleet) | ✅ | ✅ | — | Sort by pos desc; stack of arrival times; new fleet if time > top | O(n log n) | O(n) |
+| [Minimum Window Substring](./min_window_substring) 🔴 | ✅ | ✅ | — | Variable window; need/have counter; grow to valid, shrink to min | O(s+t) | O(t) |
+| [Largest Rectangle in Histogram](./largest_rectangle) | ✅ | ✅ | — | Monotonic stack of indices; pop taller, width = i−stack[-1]−1, drain with n | O(n) | O(n) |
+
+### Week 3 — Binary Search & Linked Lists
+
+Not started. `⬜` = to do. Drill column marks Toptal-drill reps done in `toptal_drill/` (`⏳ pending` = drilled once, cold-redo owed; `✅` = drilled + cold-redo locked).
+
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| Binary Search | ⬜ | ⬜ | — | — | — | — |
+| Search a 2D Matrix | ⬜ | ⬜ | — | — | — | — |
+| Koko Eating Bananas | ⬜ | ⬜ | — | — | — | — |
+| Find Minimum in Rotated Sorted Array | ⬜ | ⬜ | — | — | — | — |
+| Search in Rotated Sorted Array | ⬜ | ⬜ | — | — | — | — |
+| Reverse Linked List | ⬜ | ⬜ | — | — | — | — |
+| Merge Two Sorted Lists | ⬜ | ⬜ | — | — | — | — |
+| Reorder List | ⬜ | ⬜ | — | — | — | — |
+| Remove Nth Node From End | ⬜ | ⬜ | — | — | — | — |
+| Linked List Cycle | ⬜ | ⬜ | — | — | — | — |
+| Add Two Numbers | ⬜ | ⬜ | — | — | — | — |
+
+### Week 4 — Trees (the big one)
+
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| Invert Binary Tree | ⬜ | ⬜ | — | — | — | — |
+| Maximum Depth of Binary Tree | ⬜ | ⬜ | ✅ | DFS, `max(left,right)+1` | O(n) | O(h) |
+| Diameter of Binary Tree | ⬜ | ⬜ | ✅ | DFS returns height, track best | O(n) | O(h) |
+| Balanced Binary Tree | ⬜ | ⬜ | — | — | — | — |
+| Same Tree | ⬜ | ⬜ | — | — | — | — |
+| Subtree of Another Tree | ⬜ | ⬜ | — | — | — | — |
+| Lowest Common Ancestor of a BST | ⬜ | ⬜ | — | — | — | — |
+| Binary Tree Level Order Traversal | ⬜ | ⬜ | ⏳ pending | BFS + `deque`, row-size snapshot | O(n) | O(n) |
+| Validate Binary Search Tree | ⬜ | ⬜ | — | — | — | — |
+| Kth Smallest Element in a BST | ⬜ | ⬜ | — | — | — | — |
+| Construct Tree from Preorder and Inorder | ⬜ | ⬜ | — | — | — | — |
+
+### Week 5 — Tries, Heaps / Priority Queue, Backtracking
+
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| Implement Trie (Prefix Tree) | ⬜ | ⬜ | — | — | — | — |
+| Design Add and Search Words Data Structure | ⬜ | ⬜ | — | — | — | — |
+| Kth Largest Element in a Stream | ⬜ | ⬜ | — | — | — | — |
+| Last Stone Weight | ⬜ | ⬜ | — | — | — | — |
+| K Closest Points to Origin | ⬜ | ⬜ | — | — | — | — |
+| Task Scheduler | ⬜ | ⬜ | — | — | — | — |
+| Subsets | ⬜ | ⬜ | — | — | — | — |
+| Combination Sum | ⬜ | ⬜ | — | — | — | — |
+| Permutations | ⬜ | ⬜ | — | — | — | — |
+| Word Search | ⬜ | ⬜ | — | — | — | — |
+
+### Week 6 — Graphs (critical for system-y roles)
+
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| Number of Islands | ⬜ | ⬜ | — | — | — | — |
+| Clone Graph | ⬜ | ⬜ | — | — | — | — |
+| Pacific Atlantic Water Flow | ⬜ | ⬜ | — | — | — | — |
+| Course Schedule (topological sort) | ⬜ | ⬜ | — | — | — | — |
+| Course Schedule II | ⬜ | ⬜ | — | — | — | — |
+| Graph Valid Tree | ⬜ | ⬜ | — | — | — | — |
+| Number of Connected Components | ⬜ | ⬜ | — | — | — | — |
+| Rotting Oranges | ⬜ | ⬜ | — | — | — | — |
+| Walls and Gates | ⬜ | ⬜ | — | — | — | — |
+| Word Ladder | ⬜ | ⬜ | — | — | — | — |
+
+### Week 7 — Dynamic Programming (1D + intro 2D)
+
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| Climbing Stairs | ⬜ | ⬜ | — | — | — | — |
+| Min Cost Climbing Stairs | ⬜ | ⬜ | — | — | — | — |
+| House Robber | ⬜ | ⬜ | — | — | — | — |
+| House Robber II | ⬜ | ⬜ | — | — | — | — |
+| Longest Palindromic Substring | ⬜ | ⬜ | — | — | — | — |
+| Palindromic Substrings | ⬜ | ⬜ | — | — | — | — |
+| Decode Ways | ⬜ | ⬜ | — | — | — | — |
+| Coin Change | ⬜ | ⬜ | — | — | — | — |
+| Maximum Product Subarray | ⬜ | ⬜ | — | — | — | — |
+| Longest Increasing Subsequence | ⬜ | ⬜ | — | — | — | — |
+| Unique Paths (2D) | ⬜ | ⬜ | — | — | — | — |
+| Longest Common Subsequence (2D) | ⬜ | ⬜ | — | — | — | — |
+
+### Week 8 — Greedy, Intervals, Mixed Review + Mock Interviews
+
+| Problem | TS | Python | Drill | Pattern | Time | Space |
+|---------|----|--------|-------|---------|------|-------|
+| Maximum Subarray (Kadane's) | ⬜ | ⬜ | ⏳ pending | Kadane — `max(fresh, extend)`, seed best=nums[0] | O(n) | O(1) |
+| Jump Game | ⬜ | ⬜ | — | — | — | — |
+| Insert Interval | ⬜ | ⬜ | — | — | — | — |
+| Merge Intervals | ⬜ | ⬜ | — | — | — | — |
+| Non-overlapping Intervals | ⬜ | ⬜ | — | — | — | — |
 
 ### Fundamentals / Warmups
 

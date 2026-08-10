@@ -26,7 +26,7 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 | 1 | Invalid Transactions | 100% | Med | hash map / parsing | ✅ |
 | 2 | Subarray Sum Equals K | 92% | Med | **prefix sum + hashmap** | ✅ |
 | 3 | 3Sum | 90% | Med | sort + two-pointer | ✅ |
-| 4 | Diameter of Binary Tree | 90% | Easy | tree DFS | 🔁 |
+| 4 | Diameter of Binary Tree | 90% | Easy | tree DFS | ✅ |
 | 5 | Isomorphic Strings | 88% | Easy | hash map (two-way) | ✅ |
 | 6 | Accounts Merge | 82% | Med | union-find / graph | ⬜ |
 | 7 | Rank Transform of a Matrix | 79% | Hard | union-find | ⏭️ |
@@ -38,7 +38,7 @@ The real Toptal-tagged list. Drill these directly. `✅`=already solved (weeks/d
 | 13 | Median of Two Sorted Arrays | 67% | Hard | binary search | ⏭️ |
 | 14 | Reorganize String | 67% | Med | heap + greedy | ⬜ |
 | 15 | Number of Distinct Islands | 63% | Med | DFS/BFS grid | ⬜ |
-| 16 | Binary Tree Vertical Order Traversal | 61% | Med | tree BFS + map | ⬜ |
+| 16 | Binary Tree Vertical Order Traversal | 61% | Med | tree BFS + map | ✅ |
 | 17 | Top K Frequent Elements | 61% | Med | bucket sort | ✅ |
 | 18 | Check If N and Its Double Exist | 61% | Easy | hash set | ✅ |
 | 19 | Find K Pairs with Smallest Sums | 57% | Med | heap | ⬜ |
@@ -92,9 +92,9 @@ Don't pick "tiers OR top-20" — climb each **pattern ladder**: do the foundatio
   ↳ **Find K Pairs with Smallest Sums ⬜** (#19, heap)
 
 ### Ladder 8 — Trees  (new; keep basic)
-`Max Depth 🔁` → `(new) tree traversal (DFS + BFS/level-order) ⬜`
-  ↳ **Diameter of Binary Tree 🔁** (#4, code written correct; return-vs-track split needs a cold redo — explanation was shaky)
-  ↳ **Binary Tree Vertical Order Traversal ⬜** (#16, BFS + column map)
+`Max Depth ✅` → `tree traversal (DFS + BFS/level-order) ✅`
+  ↳ **Diameter of Binary Tree ✅** (#4, DFS-returns-height, cold redo done)
+  ↳ **Binary Tree Vertical Order Traversal ✅** (#16, BFS + (node,col) pairs + column map — LADDER 8 COMPLETE)
 
 ### Ladder 9 — Graph / Grid  (new; worth 2-3)
 `(new) Number of Islands ⬜ (DFS/BFS grid)`
