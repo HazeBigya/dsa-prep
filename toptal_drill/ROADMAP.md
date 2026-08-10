@@ -18,7 +18,7 @@ Files are **numbered by priority** (`01` = highest). Lowest-numbered ⬜ = do ne
 | 09 | Maximum Sum Circular Subarray | 75% | Med | ✅ |
 | 10 | Largest Rectangle in Histogram | 73% | Hard | ✅ *(done in Week 2 `../largest_rectangle/`)* |
 | 11 | Reorganize String | 67% | Med | ⬜ *(new tool: heapq)* |
-| 12 | Number of Distinct Islands | 63% | Med | ⬜ *(stands on foundation 08)* |
+| 12 | Number of Distinct Islands | 63% | Med | ✅ |
 | 13 | Vertical Order Traversal | 61% | Med | ✅ |
 | 14 | Top K Frequent Elements | 61% | Med | ✅ |
 | 15 | Check If N and Its Double Exist | 61% | Easy | ✅ |
