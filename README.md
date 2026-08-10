@@ -164,51 +164,50 @@ Co-equal track with the coding work — one design/week, laddered easy→hard. F
 
 Planned: Rate Limiter · Pastebin/Image Host · Web Crawler · Chat/Messaging · News Feed · Video Streaming · Ticketing (concurrency) · RAG/LLM Serving. Plus LLD: Elevator, Parking Lot. See [DSA_Prep_Plan.md](./DSA_Prep_Plan.md).
 
-### Drills
+### Drills — Toptal Sprint (Python only)
 
-Timed, narrated cold-redos in Python — solved fresh (no peeking at old solutions), explaining the approach out loud like a live interview. Interview-fluency practice, not new material.
+Timed, narrated cold-redos — solved fresh (no peeking), approach explained out loud like a live interview. Split into **foundations** (base rungs) and **target drills** (the Most-Asked Top 20). Files are numbered by priority (`01` = highest). Live status index: [toptal_drill/ROADMAP.md](./toptal_drill/ROADMAP.md).
 
-Organized as **foundation → target ladders**: master the foundation rung, then climb to the higher-frequency target that stands on it. `★` = a top-asked target problem.
+**Status: 11 target drills done · 6 to do.** Next ⬜ = lowest-numbered todo.
 
-**Ladder 1 — Hash Map / Set** *(complete)*
+#### 🪜 Foundations — `toptal_drill/foundations/` *(all done)*
 
-| Problem | Rung | Pattern | Time | Space |
-|---------|------|---------|------|-------|
-| [Two Sum](./toptal_drill/foundations/01_two_sum.py) | foundation | Hash map (complement lookup) | O(n) | O(n) |
-| [Valid Anagram](./toptal_drill/foundations/02_valid_anagram.py) | foundation | Char-count maps compared | O(n) | O(n) |
-| [Group Anagrams](./toptal_drill/foundations/03_group_anagrams.py) | foundation | Canonical-key bucketing (sorted key) | O(n·k log k) | O(n·k) |
-| [Contains Duplicate](./toptal_drill/foundations/04_contains_duplicate.py) | foundation | Set membership, early exit | O(n) | O(n) |
-| [Top K Frequent](./toptal_drill/drills/14_top_k_frequent.py) ★ | target | Counter + bucket sort by frequency | O(n) | O(n) |
-| [Isomorphic Strings](./toptal_drill/drills/05_isomorphic_strings.py) ★ | target | Two-way map (or one map + used set) | O(n) | O(n) |
-| [Check If N and Its Double Exist](./toptal_drill/drills/15_check_n_double.py) ★ | target | One-pass set, check `2x` and `x/2` | O(n) | O(n) |
-| [Invalid Transactions](./toptal_drill/drills/01_invalid_transactions.py) ★ | target | Group by name + inner conflict scan | O(n²) | O(n) |
+| # | Problem | Pattern | Holds up |
+|---|---------|---------|----------|
+| 01 | [Two Sum](./toptal_drill/foundations/01_two_sum.py) | Hash map (complement lookup) | Hash-map ladder |
+| 02 | [Valid Anagram](./toptal_drill/foundations/02_valid_anagram.py) | Char-count maps compared | Hash-map ladder |
+| 03 | [Group Anagrams](./toptal_drill/foundations/03_group_anagrams.py) | Canonical-key bucketing | Hash-map ladder |
+| 04 | [Contains Duplicate](./toptal_drill/foundations/04_contains_duplicate.py) | Set membership, early exit | Hash-map ladder |
+| 05 | [Maximum Subarray](./toptal_drill/foundations/05_maximum_subarray.py) | Kadane — `max(fresh, extend)` | → drill 09 |
+| 06 | [Maximum Depth of Binary Tree](./toptal_drill/foundations/06_maximum_depth_binary_tree.py) | DFS; `max(left,right)+1` | → drills 04, 13 |
+| 07 | [Level Order Traversal](./toptal_drill/foundations/07_level_order_traversal.py) | BFS + `deque`, row-size snapshot | → drill 13, graph |
+| 08 | [Number of Islands](./toptal_drill/foundations/08_number_of_islands.py) | DFS flood-fill, sink-to-0 | → drills 06, 12 |
 
-**Ladder 2 — Prefix Sum** *(complete)*
+#### 🎯 Target Drills — `toptal_drill/drills/` (Top 20, ranked by frequency)
 
-| Problem | Rung | Pattern | Time | Space |
-|---------|------|---------|------|-------|
-| [Subarray Sum Equals K](./toptal_drill/drills/02_subarray_sum_equals_k.py) ★ | target | Running sum + hashmap of seen sums; count `running − k` | O(n) | O(n) |
+| # | Problem | Freq | Pattern | Status |
+|---|---------|------|---------|--------|
+| 01 | [Invalid Transactions](./toptal_drill/drills/01_invalid_transactions.py) | 100% | Group by name + inner conflict scan | ✅ |
+| 02 | [Subarray Sum Equals K](./toptal_drill/drills/02_subarray_sum_equals_k.py) | 92% | Prefix sum + hashmap of seen sums | ✅ |
+| 03 | [3Sum](./toptal_drill/drills/03_three_sum.py) | 90% | Sort + fix one + two-pointer + dedup | ✅ |
+| 04 | [Diameter of Binary Tree](./toptal_drill/drills/04_diameter_binary_tree.py) | 90% | DFS returns height, track best | ✅ |
+| 05 | [Isomorphic Strings](./toptal_drill/drills/05_isomorphic_strings.py) | 88% | Two-way map (or map + used set) | ✅ |
+| 06 | [Accounts Merge](./toptal_drill/drills/06_accounts_merge.py) | 82% | Union-find / DFS on emails | ⬜ |
+| 07 | [Zero Array Transformation II](./toptal_drill/drills/07_zero_array_transformation.py) | 76% | Greedy + difference array | ⬜ |
+| 08 | [Continuous Subarrays](./toptal_drill/drills/08_continuous_subarrays.py) | 75% | Window + monotonic deques | ⬜ |
+| 09 | [Maximum Sum Circular Subarray](./toptal_drill/drills/09_maximum_circular_subarray.py) | 75% | Kadane ×2; `wrap = total − minSum` | ✅ |
+| 10 | [Largest Rectangle](./toptal_drill/drills/10_largest_rectangle.py) | 73% | Monotonic stack *(done in Week 2)* | ✅ |
+| 11 | [Reorganize String](./toptal_drill/drills/11_reorganize_string.py) | 67% | Max-heap by count + greedy | ⬜ |
+| 12 | [Number of Distinct Islands](./toptal_drill/drills/12_distinct_islands.py) | 63% | DFS flood + relative-offset shape sig | ✅ |
+| 13 | [Vertical Order Traversal](./toptal_drill/drills/13_vertical_order_traversal.py) | 61% | BFS + `(node, col)` pairs + column map | ✅ |
+| 14 | [Top K Frequent](./toptal_drill/drills/14_top_k_frequent.py) | 61% | Counter + bucket sort by frequency | ✅ |
+| 15 | [Check If N and Its Double Exist](./toptal_drill/drills/15_check_n_double.py) | 61% | One-pass set, check `2x` and `x/2` | ✅ |
+| 16 | [Find K Pairs with Smallest Sums](./toptal_drill/drills/16_find_k_pairs.py) | 57% | Min-heap frontier (k-way merge) | ⬜ |
+| 17 | [Combination Sum II](./toptal_drill/drills/17_combination_sum_ii.py) | 57% | Backtracking with dedup | ⬜ |
 
-**Ladder 3 — Kadane / Max Subarray** *(complete)*
+⏭️ **Skipped** (rare + Hard, low ROI): #7 Rank Transform of a Matrix · #11 Bus Routes · #13 Median of Two Sorted Arrays.
 
-| Problem | Rung | Pattern | Time | Space |
-|---------|------|---------|------|-------|
-| [Maximum Subarray](./toptal_drill/foundations/05_maximum_subarray.py) | foundation | Kadane — `max(start fresh, extend)`, seed best=nums[0] | O(n) | O(1) |
-| [Maximum Sum Circular Subarray](./toptal_drill/drills/09_maximum_circular_subarray.py) ★ | target | Kadane ×2 (max + min); `wrap = total − minSum`; all-neg guard | O(n) | O(1) |
-
-**Ladder 5 — Two-Pointer / Sort**
-
-| Problem | Rung | Pattern | Time | Space |
-|---------|------|---------|------|-------|
-| [3Sum](./three_sum/three_sum.py) ★ | target | Sort + fix one + two-pointer + dedup | O(n²) | O(n) |
-
-**Ladder 8 — Trees** *(started)*
-
-| Problem | Rung | Pattern | Time | Space |
-|---------|------|---------|------|-------|
-| [Maximum Depth of Binary Tree](./toptal_drill/foundations/06_maximum_depth_binary_tree.py) | foundation | DFS recursion; `max(left,right)+1`, base `None→0` | O(n) | O(h) |
-
-Next ladders in queue: Trees targets (Diameter #4, Vertical Order #16), then Heap / Graph basics. See [TOPTAL_PREP.md](./TOPTAL_PREP.md) for the full ladder map + schedule.
+See [TOPTAL_PREP.md](./TOPTAL_PREP.md) for the full ladder map + schedule.
 
 ## Structure
 
