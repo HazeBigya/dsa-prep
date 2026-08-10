@@ -174,27 +174,27 @@ Organized as **foundation → target ladders**: master the foundation rung, then
 
 | Problem | Rung | Pattern | Time | Space |
 |---------|------|---------|------|-------|
-| [Two Sum](./toptal_drill/two_sum.py) | foundation | Hash map (complement lookup) | O(n) | O(n) |
-| [Valid Anagram](./toptal_drill/valid_anagram.py) | foundation | Char-count maps compared | O(n) | O(n) |
-| [Group Anagrams](./toptal_drill/group_anagrams.py) | foundation | Canonical-key bucketing (sorted key) | O(n·k log k) | O(n·k) |
-| [Contains Duplicate](./toptal_drill/contains_duplicate.py) | foundation | Set membership, early exit | O(n) | O(n) |
-| [Top K Frequent](./toptal_drill/top_k_frequent.py) ★ | target | Counter + bucket sort by frequency | O(n) | O(n) |
-| [Isomorphic Strings](./toptal_drill/isomorphic_strings.py) ★ | target | Two-way map (or one map + used set) | O(n) | O(n) |
-| [Check If N and Its Double Exist](./toptal_drill/check_n_double.py) ★ | target | One-pass set, check `2x` and `x/2` | O(n) | O(n) |
-| [Invalid Transactions](./toptal_drill/invalid_transactions.py) ★ | target | Group by name + inner conflict scan | O(n²) | O(n) |
+| [Two Sum](./toptal_drill/foundations/01_two_sum.py) | foundation | Hash map (complement lookup) | O(n) | O(n) |
+| [Valid Anagram](./toptal_drill/foundations/02_valid_anagram.py) | foundation | Char-count maps compared | O(n) | O(n) |
+| [Group Anagrams](./toptal_drill/foundations/03_group_anagrams.py) | foundation | Canonical-key bucketing (sorted key) | O(n·k log k) | O(n·k) |
+| [Contains Duplicate](./toptal_drill/foundations/04_contains_duplicate.py) | foundation | Set membership, early exit | O(n) | O(n) |
+| [Top K Frequent](./toptal_drill/drills/14_top_k_frequent.py) ★ | target | Counter + bucket sort by frequency | O(n) | O(n) |
+| [Isomorphic Strings](./toptal_drill/drills/05_isomorphic_strings.py) ★ | target | Two-way map (or one map + used set) | O(n) | O(n) |
+| [Check If N and Its Double Exist](./toptal_drill/drills/15_check_n_double.py) ★ | target | One-pass set, check `2x` and `x/2` | O(n) | O(n) |
+| [Invalid Transactions](./toptal_drill/drills/01_invalid_transactions.py) ★ | target | Group by name + inner conflict scan | O(n²) | O(n) |
 
 **Ladder 2 — Prefix Sum** *(complete)*
 
 | Problem | Rung | Pattern | Time | Space |
 |---------|------|---------|------|-------|
-| [Subarray Sum Equals K](./toptal_drill/subarray_sum_equals_k.py) ★ | target | Running sum + hashmap of seen sums; count `running − k` | O(n) | O(n) |
+| [Subarray Sum Equals K](./toptal_drill/drills/02_subarray_sum_equals_k.py) ★ | target | Running sum + hashmap of seen sums; count `running − k` | O(n) | O(n) |
 
 **Ladder 3 — Kadane / Max Subarray** *(complete)*
 
 | Problem | Rung | Pattern | Time | Space |
 |---------|------|---------|------|-------|
-| [Maximum Subarray](./toptal_drill/maximum_subarray.py) | foundation | Kadane — `max(start fresh, extend)`, seed best=nums[0] | O(n) | O(1) |
-| [Maximum Sum Circular Subarray](./toptal_drill/maximum_circular_subarray.py) ★ | target | Kadane ×2 (max + min); `wrap = total − minSum`; all-neg guard | O(n) | O(1) |
+| [Maximum Subarray](./toptal_drill/foundations/05_maximum_subarray.py) | foundation | Kadane — `max(start fresh, extend)`, seed best=nums[0] | O(n) | O(1) |
+| [Maximum Sum Circular Subarray](./toptal_drill/drills/09_maximum_circular_subarray.py) ★ | target | Kadane ×2 (max + min); `wrap = total − minSum`; all-neg guard | O(n) | O(1) |
 
 **Ladder 5 — Two-Pointer / Sort**
 
@@ -206,7 +206,7 @@ Organized as **foundation → target ladders**: master the foundation rung, then
 
 | Problem | Rung | Pattern | Time | Space |
 |---------|------|---------|------|-------|
-| [Maximum Depth of Binary Tree](./toptal_drill/maximum_depth_binary_tree.py) | foundation | DFS recursion; `max(left,right)+1`, base `None→0` | O(n) | O(h) |
+| [Maximum Depth of Binary Tree](./toptal_drill/foundations/06_maximum_depth_binary_tree.py) | foundation | DFS recursion; `max(left,right)+1`, base `None→0` | O(n) | O(h) |
 
 Next ladders in queue: Trees targets (Diameter #4, Vertical Order #16), then Heap / Graph basics. See [TOPTAL_PREP.md](./TOPTAL_PREP.md) for the full ladder map + schedule.
 
