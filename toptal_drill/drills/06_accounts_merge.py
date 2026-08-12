@@ -1,28 +1,41 @@
-"""
-Toptal Top-20 Target #6 — Accounts Merge
-Frequency: 82%  |  Difficulty: Medium
-Pattern: Union-Find (or DFS on a graph of emails)
-
-STATUS: TODO (roadmap stub — solve from scratch, out loud, then cold-redo)
-Foundation: foundations/08_number_of_islands.py (flood/connectivity)
-
-Problem:
-  Given accounts[i] = [name, email1, email2, ...], merge accounts that
-  share ANY email (same person). Return merged accounts, each as
-  [name, sorted_email1, sorted_email2, ...]. Two accounts with the same
-  name are only merged if they share an email.
-
-Approach:
-  1. Model emails as nodes; emails in the same account are connected.
-  2. Union all emails within each account (union-find), keep email->name.
-  3. Group emails by their root parent, sort each group, prepend the name.
-
-Example:
-  accounts = [["John","a@x.com","b@x.com"],["John","b@x.com","c@x.com"],["Mary","m@x.com"]]
-  # -> [["John","a@x.com","b@x.com","c@x.com"],["Mary","m@x.com"]]
-"""
+from collections import defaultdict
 
 
-def accountsMerge(accounts):
-    # TODO: your solution here
-    pass
+def accounts_merge(accounts):
+    owner = {}
+    parent = {}
+
+    def find_boss(e):
+        while parent[e] != e:
+            e = parent[e]
+        return e
+
+    def union(e1, e2):
+        parent[find_boss(e1)] = find_boss(e2)
+
+    for account in accounts:
+        name = account[0]
+        first_email = account[1]
+        for email in account[1:]:
+            if email not in parent:
+                parent[email] = email
+            owner[email] = name
+            union(first_email, email)
+
+    groups = defaultdict(list)
+    for email in parent:
+        groups[find_boss(email)].append(email)
+
+    result = []
+    for boss, email in groups.items():
+        result.append([owner[boss]] + sorted(email))
+    print(result)
+
+
+accounts = [
+    ["John", "a@x.com", "b@x.com"],
+    ["John", "c@x.com", "d@x.com"],
+    ["Mary", "m@x.com", "n@x.com"],
+    ["John", "b@x.com", "c@x.com"],
+]
+accounts_merge(accounts)

@@ -182,6 +182,7 @@ Timed, narrated cold-redos — solved fresh (no peeking), approach explained out
 | 06 | [Maximum Depth of Binary Tree](./toptal_drill/foundations/06_maximum_depth_binary_tree.py) | DFS; `max(left,right)+1` | → drills 04, 13 |
 | 07 | [Level Order Traversal](./toptal_drill/foundations/07_level_order_traversal.py) | BFS + `deque`, row-size snapshot | → drill 13, graph |
 | 08 | [Number of Islands](./toptal_drill/foundations/08_number_of_islands.py) | DFS flood-fill, sink-to-0 | → drills 06, 12 |
+| 09 | [heapq basics](./toptal_drill/foundations/09_heap_basics.py) | Min-heap, negate-for-max, tuple ordering | → drills 11, 16 |
 
 #### 🎯 Target Drills — `toptal_drill/drills/` (Top 20, ranked by frequency)
 
@@ -192,12 +193,12 @@ Timed, narrated cold-redos — solved fresh (no peeking), approach explained out
 | 03 | [3Sum](./toptal_drill/drills/03_three_sum.py) | 90% | Sort + fix one + two-pointer + dedup | ✅ |
 | 04 | [Diameter of Binary Tree](./toptal_drill/drills/04_diameter_binary_tree.py) | 90% | DFS returns height, track best | ✅ |
 | 05 | [Isomorphic Strings](./toptal_drill/drills/05_isomorphic_strings.py) | 88% | Two-way map (or map + used set) | ✅ |
-| 06 | [Accounts Merge](./toptal_drill/drills/06_accounts_merge.py) | 82% | Union-find / DFS on emails | ⬜ |
+| 06 | [Accounts Merge](./toptal_drill/drills/06_accounts_merge.py) | 82% | Union-find / DFS on emails | ✅ |
 | 07 | [Zero Array Transformation II](./toptal_drill/drills/07_zero_array_transformation.py) | 76% | Greedy + difference array | ⬜ |
 | 08 | [Continuous Subarrays](./toptal_drill/drills/08_continuous_subarrays.py) | 75% | Window + monotonic deques | ⬜ |
 | 09 | [Maximum Sum Circular Subarray](./toptal_drill/drills/09_maximum_circular_subarray.py) | 75% | Kadane ×2; `wrap = total − minSum` | ✅ |
 | 10 | [Largest Rectangle](./toptal_drill/drills/10_largest_rectangle.py) | 73% | Monotonic stack *(done in Week 2)* | ✅ |
-| 11 | [Reorganize String](./toptal_drill/drills/11_reorganize_string.py) | 67% | Max-heap by count + greedy | ⬜ |
+| 11 | [Reorganize String](./toptal_drill/drills/11_reorganize_string.py) | 67% | Max-heap by count + greedy | ✅ |
 | 12 | [Number of Distinct Islands](./toptal_drill/drills/12_distinct_islands.py) | 63% | DFS flood + relative-offset shape sig | ✅ |
 | 13 | [Vertical Order Traversal](./toptal_drill/drills/13_vertical_order_traversal.py) | 61% | BFS + `(node, col)` pairs + column map | ✅ |
 | 14 | [Top K Frequent](./toptal_drill/drills/14_top_k_frequent.py) | 61% | Counter + bucket sort by frequency | ✅ |

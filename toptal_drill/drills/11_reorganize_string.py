@@ -1,25 +1,40 @@
-"""
-Toptal Top-20 Target #14 — Reorganize String
-Frequency: 67%  |  Difficulty: Medium
-Pattern: Heap (max-heap by count) + greedy
-
-STATUS: TODO (roadmap stub — solve from scratch, out loud, then cold-redo)
-Foundation: NEW TOOL: heapq. Warm up heapq basics before this.
-
-Problem:
-  Rearrange the string so no two adjacent chars are the same.
-  Return any valid arrangement, or '' if impossible.
-
-Approach:
-  1. Count chars (Counter). Max-heap by frequency (push -count in Python).
-  2. Repeatedly pop the two most frequent, append both, decrement, push back
-  3. the ones still > 0. Impossible if the top count > (len+1)//2.
-
-Example:
-  s = "aab"  # -> "aba"   ;   s = "aaab"  # -> ""
-"""
+import heapq
+from collections import Counter
 
 
 def reorganizeString(s):
-    # TODO: your solution here
-    pass
+    char_count = Counter(s)
+    heap = []
+
+    for char, count in char_count.items():
+        heap.append((-count, char))
+    heapq.heapify(heap)
+
+    result = []
+
+    while len(heap) >= 2:
+        count1, char1 = heapq.heappop(heap)
+        count2, char2 = heapq.heappop(heap)
+
+        result.extend([char1, char2])
+
+        count1 += 1
+        count2 += 1
+
+        if count1 < 0:
+            heapq.heappush(heap, (count1, char1))
+
+        if count2 < 0:
+            heapq.heappush(heap, (count2, char2))
+
+    if heap:
+        count, char = heapq.heappop(heap)
+        if -count > 1:
+            return ""
+        result.append(char)
+
+    return "".join(result)
+
+
+s = "aab"
+print(reorganizeString(s))
