@@ -24,21 +24,20 @@ Fill in every ___ blank, then run:  python3 11_monotonic_deque.py
 
 from collections import deque
 
-
 # ---------------------------------------------------------------
 # PART 1 — deque basics (a list you can push/pop from BOTH ends)
 # ---------------------------------------------------------------
 dq = deque()
-dq.append(1)          # add to BACK    -> [1]
-dq.append(2)          # add to BACK    -> [1, 2]
-dq.appendleft(0)      # add to FRONT   -> [0, 1, 2]
+dq.append(1)  # add to BACK    -> [1]
+dq.append(2)  # add to BACK    -> [1, 2]
+dq.appendleft(0)  # add to FRONT   -> [0, 1, 2]
 
-print("PART 1 deque:", list(dq))       # expect [0, 1, 2]
-print("PART 1 front:", dq[0])          # front  -> 0
-print("PART 1 back: ", dq[-1])         # back   -> 2
+print("PART 1 deque:", list(dq))  # expect [0, 1, 2]
+print("PART 1 front:", dq[0])  # front  -> 0
+print("PART 1 back: ", dq[-1])  # back   -> 2
 
-dq.pop()              # remove from BACK  -> [0, 1]
-dq.popleft()          # remove from FRONT -> [1]
+dq.pop()  # remove from BACK  -> [0, 1]
+dq.popleft()  # remove from FRONT -> [1]
 print("PART 1 after pops:", list(dq))  # expect [1]
 
 
@@ -48,12 +47,12 @@ print("PART 1 after pops:", list(dq))  # expect [1]
 #   nums = [1,3,-1,-3,5,3,6,7], k = 3  ->  [3,3,5,5,6,7]
 # ---------------------------------------------------------------
 def slidingWindowMax(nums, k):
-    dq = deque()      # holds INDICES; their values stay DECREASING
+    dq = deque()  # holds INDICES; their values stay DECREASING
     out = []
 
     for r in range(len(nums)):
         # 1) new guy dominates: pop weaker elements off the BACK
-        while dq and nums[dq[-1]] < nums[___]:
+        while dq and nums[dq[-1]] < nums[r]:
             dq.pop()
 
         # 2) new guy joins the back
@@ -61,12 +60,12 @@ def slidingWindowMax(nums, k):
 
         # 3) front fell out of the window? evict it
         #    window covers [r-k+1 .. r], so anything <= r-k is outside
-        if dq[0] <= ___ - k:
+        if dq[0] <= r - k:
             dq.popleft()
 
         # 4) once the window is full, record the max (which lives at...)
         if r >= k - 1:
-            out.append(nums[dq[___]])
+            out.append(nums[dq[0]])
 
     return out
 
@@ -81,11 +80,11 @@ print("PART 2:", slidingWindowMax([1, 3, -1, -3, 5, 3, 6, 7], 3))
 #   nums = [1,3,-1,-3,5,3,6,7], k = 3  ->  [-1,-3,-3,-3,3,3]
 # ---------------------------------------------------------------
 def slidingWindowMin(nums, k):
-    dq = deque()      # holds INDICES; their values stay INCREASING
+    dq = deque()  # holds INDICES; their values stay INCREASING
     out = []
 
     for r in range(len(nums)):
-        while dq and nums[dq[-1]] ___ nums[r]:      # flip the comparison!
+        while dq and nums[dq[-1]] > nums[r]:  # flip the comparison!
             dq.pop()
         dq.append(r)
 
@@ -109,8 +108,8 @@ print("PART 3:", slidingWindowMin([1, 3, -1, -3, 5, 3, 6, 7], 3))
 #   nums = [5,4,2,4]  ->  gaps [0, 1, 3, 3]
 # ---------------------------------------------------------------
 def runningGaps(nums):
-    maxDq = deque()   # values DECREASING -> front = max
-    minDq = deque()   # values INCREASING -> front = min
+    maxDq = deque()  # values DECREASING -> front = max
+    minDq = deque()  # values INCREASING -> front = min
     gaps = []
 
     for r in range(len(nums)):
@@ -122,8 +121,8 @@ def runningGaps(nums):
             minDq.pop()
         minDq.append(r)
 
-        window_max = nums[maxDq[___]]      # where does the answer live?
-        window_min = nums[minDq[___]]
+        window_max = nums[maxDq[0]]  # where does the answer live?
+        window_min = nums[minDq[0]]
         gaps.append(window_max - window_min)
 
     return gaps

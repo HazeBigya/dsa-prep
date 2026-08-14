@@ -197,9 +197,9 @@ Timed, narrated cold-redos — solved fresh (no peeking), approach explained out
 | 05 | [Isomorphic Strings](./toptal_drill/drills/05_isomorphic_strings.py) | 88% | Two-way map (or map + used set) | ✅ |
 | 06 | [Accounts Merge](./toptal_drill/drills/06_accounts_merge.py) | 82% | Union-find / DFS on emails | ✅ |
 | 07 | [Zero Array Transformation II](./toptal_drill/drills/07_zero_array_transformation.py) | 76% | Difference array + binary search on answer | ✅ |
-| 08 | [Continuous Subarrays](./toptal_drill/drills/08_continuous_subarrays.py) | 75% | Window + monotonic deques | ⬜ |
+| 08 | [Continuous Subarrays](./toptal_drill/drills/08_continuous_subarrays.py) | 75% | Window + two monotonic deques (max−min ≤ 2) | ✅ |
 | 09 | [Maximum Sum Circular Subarray](./toptal_drill/drills/09_maximum_circular_subarray.py) | 75% | Kadane ×2; `wrap = total − minSum` | ✅ |
-| 10 | [Largest Rectangle](./toptal_drill/drills/10_largest_rectangle.py) | 73% | Monotonic stack *(done in Week 2)* | ✅ |
+| 10 | [Largest Rectangle](./toptal_drill/drills/10_largest_rectangle.py) | 73% | Monotonic stack + sentinel; `width = i − stack[-1] − 1` | ✅ |
 | 11 | [Reorganize String](./toptal_drill/drills/11_reorganize_string.py) | 67% | Max-heap by count + greedy | ✅ |
 | 12 | [Number of Distinct Islands](./toptal_drill/drills/12_distinct_islands.py) | 63% | DFS flood + relative-offset shape sig | ✅ |
 | 13 | [Vertical Order Traversal](./toptal_drill/drills/13_vertical_order_traversal.py) | 61% | BFS + `(node, col)` pairs + column map | ✅ |
