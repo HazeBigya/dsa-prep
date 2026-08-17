@@ -7,10 +7,11 @@ def subarray_sum(nums, k):
         running += num
         count += seen.get(running - k, 0)
         seen[running] = seen.get(running, 0) + 1
+
     return count
 
 
-nums = [1, 2, 3]
-target = 3
-
-print(subarray_sum(nums, target))
+print(subarray_sum([1, 2, 3], 6))
+print(subarray_sum([1, 1, 1], 2))
+print(subarray_sum([0, 0, 0], 0))
+print(subarray_sum([3, -2, 5], 3))

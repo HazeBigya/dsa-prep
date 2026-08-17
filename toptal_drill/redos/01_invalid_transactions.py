@@ -2,11 +2,11 @@ from collections import defaultdict
 
 
 def invalid_transactions(transactions):
-    transaction_dict = defaultdict(list)
+    transactions_dict = defaultdict(list)
 
     for t in transactions:
         name, time, amount, city = t.split(",")
-        transaction_dict[name].append(
+        transactions_dict[name].append(
             {
                 "name": name,
                 "time": int(time),
@@ -16,23 +16,20 @@ def invalid_transactions(transactions):
             }
         )
 
-    invalid = set()
+    invlaid = set()
 
-    for name, tnx in transaction_dict.items():
-        for current in tnx:
-            if current["amount"] > 1000:
-                invalid.add(current["t"])
+    for name, tnx in transactions_dict.items():
+        for curr in tnx:
+            if curr["amount"] > 1000:
+                invlaid.add(curr["t"])
                 continue
 
-            for other in tnx:
-                if (
-                    other["city"] != current["city"]
-                    and abs(other["time"] - current["time"]) <= 60
-                ):
-                    invalid.add(other["t"])
+            for oth in tnx:
+                if curr["city"] != oth["city"] and abs(curr["time"] - oth["time"]):
+                    invlaid.add(oth["t"])
                     break
 
-    return list(invalid)
+    return list(invlaid)
 
 
 transactions = [

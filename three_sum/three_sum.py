@@ -19,6 +19,8 @@ def three_sum(nums):
                 R -= 1
                 while L < R and nums[L] == nums[L - 1]:
                     L += 1
+                while R > L and nums[R] == nums[R + 1]:
+                    R -= 1
             elif sum < target:
                 L += 1
             else:

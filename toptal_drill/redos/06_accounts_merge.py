@@ -26,11 +26,11 @@ def accounts_merge(accounts):
     for email in parent:
         groups[find(email)].append(email)
 
-    result = []
+    output = []
     for root, email in groups.items():
-        result.append([owner[root]] + sorted(email))
+        output.append([owner[root]] + sorted(email))
 
-    return result
+    return output
 
 
 accounts = [

@@ -12,15 +12,20 @@ def three_sum(nums):
         target = -nums[i]
 
         while L < R:
-            curr_sum = nums[L] + nums[R]
-            if curr_sum == target:
+            sum = nums[L] + nums[R]
+            if sum == target:
                 result.append([nums[i], nums[L], nums[R]])
                 L += 1
                 R -= 1
-            elif curr_sum < target:
+                while L < R and nums[L] == nums[L - 1]:
+                    L += 1
+                while R > L and nums[R] == nums[R + 1]:
+                    R -= 1
+            elif sum < target:
                 L += 1
             else:
                 R -= 1
+
     return result
 
 
